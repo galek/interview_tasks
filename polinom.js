@@ -36,5 +36,3 @@ function r(string)
 }
 
 r('Заказ');
-
-polinom();
