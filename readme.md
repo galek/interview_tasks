@@ -30,6 +30,9 @@
 12) Angular частые вопросы [here](angular.md)
 
 
-### Ссылки на всякие туториалы и курсы
-1) https://www.youtube.com/channel/UCP-xJwnvKCGyS-nbyOx1Wmg/videos
-2) https://www.youtube.com/channel/UCTUyoZMfksbNIHfWJjwr5aQ
+### Ссылки на всякие туториалы, курсы, доклады
+1) По Web (webpack, JS, CSS, HTML, NodeJS)
+https://www.youtube.com/channel/UCP-xJwnvKCGyS-nbyOx1Wmg/videos
+2) Яндекс: https://www.youtube.com/channel/UCTUyoZMfksbNIHfWJjwr5aQ
+3) С++: https://www.youtube.com/watch?v=LZflL44SVVY
+4) Go: 
