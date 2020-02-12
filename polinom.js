@@ -9,9 +9,32 @@
 Заказ
 */
 
-function polinom(str)
+// см файл reverse.js в этом репозитории
+function reverse(str)
+{
+  let result="";
+  // Почему так? - Объсняю, у тебя есть символ конца строки
+  // поэтому длина будет - количество символов + 1, нумерация
+  // разумеется с нуля идет. т.е length тебе выдаст 2
+  // обратишься к str[2] будет undefined, но тебе нужно вывести и 0 элемент
+  for(let i=str.length-1; i!=-1; i--)
+	{
+ 		result+=str[i];
+		//alert(str[i] + ' iterator ' + i);
+	}
+	return result;
+  }
+  
+function r(string)
 {
 // в нижний регистр, потому что надо избавиться от заглавной буквы
+	let str = string.toLowerCase();
+	let string2=reverse(str);
+	
+	if(str==string2)
+	alert('полином');
 }
+
+r('Заказ');
 
 polinom();
