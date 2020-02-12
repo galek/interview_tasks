@@ -8,8 +8,9 @@ function r()
 {
 	let str="23";
 	let result='';
-
-	for(let i=str.length-1; i!=-1; i--)
+	// условие окончания (более простое) >=0; 
+	// влоб: i!=-1
+	for(let i=str.length-1; i>=0; i--)
 	{
  		result+=str[i];
 		//alert(str[i] + ' iterator ' + i);
