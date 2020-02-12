@@ -21,7 +21,7 @@ function drawChess()
   }
   else
   {
-    array.push({isBlack:true, x:i, y:j});
+    array.push({isBlack:false, x:i, y:j});
   }
   
   isBlack!=isBlack;
