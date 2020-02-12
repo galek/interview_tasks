@@ -13,7 +13,23 @@
 - Вопросы которые я задавал, когда подбирал людей.
 - Ссылки на каналы, где возможно быстро послушать курс лекций
 
+# Список задачек на алгоритмистику
+1) Перевернуть строку [here](string_reverse.js)
+2) Полином [here](polinom.js)
+3) Факториал [here](factorial.js)
+4) Шахматная доска [here](chess.js)
+5) Шахматная доска. Ход конем [here](chess_hourse.js)
+6) Шахматная доска. Ход ферзем [here](chess_commander.js)
+7) Шахматная доска. Ход Королевой [here](chess_queen.js)
+8) Шахматная доска. Ход Башней [here](chess_tower.js)
 
-### Ссылки
+
+9) Деструктор С++. Сколько раз будет вызван деструктор [here](dector.cpp)
+10) Паттерны [here](patterns.md)
+11) SQL частые вопросы [here](sql.md)
+12) Angular частые вопросы [here](angular.md)
+
+
+### Ссылки на всякие туториалы и курсы
 1) https://www.youtube.com/channel/UCP-xJwnvKCGyS-nbyOx1Wmg/videos
 2) https://www.youtube.com/channel/UCTUyoZMfksbNIHfWJjwr5aQ
