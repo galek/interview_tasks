@@ -5,6 +5,7 @@ var arr = [
 ];
 //На выходе объект {width: 10, height: 20}
 */
+// Solution: https://jsfiddle.net/galek/L09o4e2r/
 
 const arr = [{
     name: 'width',
