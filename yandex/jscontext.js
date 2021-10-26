@@ -1,5 +1,6 @@
 /*
 Задача на контексты - что тут будет выведено?
+https://jsfiddle.net/galek/wLmnox7e/1/
 */
 var age = 10;
 var user = {
