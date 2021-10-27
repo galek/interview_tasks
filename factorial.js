@@ -7,4 +7,4 @@
  }
 
 const i = r(3);
- alert(i);
+alert(i);
