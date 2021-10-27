@@ -1,0 +1,20 @@
+/*
+Задача: сделать реверс текстовой строки
+На вход 23
+На выход 32
+
+JS версия
+*/
+
+function revert(strInput:string) {
+  return strInput.split('').reverse().join('')
+}
+
+const originalStr = '23'
+const reverted = revert(originalStr)
+
+
+console.warn({
+  originalStr,
+  reverted
+})
