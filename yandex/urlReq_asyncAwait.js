@@ -47,6 +47,12 @@ async function getResource(url, iter) {
 }
 
 
+getResource('https://galek.free.beeceptor.com', 5)
+  .then((res) => console.warn(res))
+  .catch(error => {
+    console.warn("Error is present")
+  })
+
 getResource('https://galek.free.beeceptor.com/error', 5)
   .then((res) => console.warn(res))
   .catch(error => {
