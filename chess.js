@@ -5,25 +5,22 @@ TODO: Сделать нужно CSS, и вывести это визуально
 
 Сейчас здесь схематичное решение.
 */
-let array=[];
-
-function drawChess()
-{
+function drawChess() {
   let isBlack = true;
-    
-  for(let i=0;i<8;i++)
-  for(let j=0;j<8;j++)
-  {
-  if(j==0) isBlack!=isBlack;
-  
-  if(isBlack) {
-    array.push({isBlack:true, x:i, y:j});
+  let arr = [];
+
+  for (let i = 0; i < 8; i++) {
+    for (let j = 0; j < 8; j++) {
+      arr.push({
+        isBlack,
+        x: i,
+        y: j
+      });
+      isBlack = !isBlack;
+    }
   }
-  else
-  {
-    array.push({isBlack:false, x:i, y:j});
-  }
-  
-  isBlack!=isBlack;
-  }
+
+  return arr
 }
+
+console.warn(drawChess())
