@@ -1,4 +1,7 @@
 /*
+// https://regex101.com/r/DaOPEl/1/
+// https://stackoverflow.com/questions/55097501/how-to-use-regex-to-tell-if-first-and-last-character-of-a-string-match
+
 Day 7: Regular Expressions I
 
 Objective
@@ -52,5 +55,50 @@ false
 Explanation 3
 
 This string starts with the vowel a but ends in the vowel o.
-
 */
+
+'use strict';
+
+process.stdin.resume();
+process.stdin.setEncoding('utf-8');
+
+let inputString = '';
+let currentLine = 0;
+
+process.stdin.on('data', inputStdin => {
+    inputString += inputStdin;
+});
+
+process.stdin.on('end', _ => {
+    inputString = inputString.trim().split('\n').map(string => {
+        return string.trim();
+    });
+    
+    main();    
+});
+
+function readLine() {
+    return inputString[currentLine++];
+}
+
+function regexVar() {
+    /*
+     * Declare a RegExp object variable named 're'
+     * It must match a string that starts and ends with the same vowel (i.e., {a, e, i, o, u})
+     */
+    let re = /^(.).*\1$/igm
+       
+    
+    /*
+     * Do not remove the return statement
+     */
+    return re;
+}
+
+
+function main() {
+    const re = regexVar();
+    const s = readLine();
+    
+    console.log(re.test(s));
+}
