@@ -5,7 +5,7 @@
 Если во время запроса произошла ошибка, то пробовать запросить ещё 5 раз.
 Если в итоге информацию получить не удалось, вернуть ошибку "Заданный URL недоступен".
 
-Решение: https://jsfiddle.net/galek/ym83vxbt/
+Решение: https://jsfiddle.net/galek/ym83vxbt/4
 
 Мок создается на beeceptor.com 
 
@@ -15,6 +15,8 @@
 */
 
 async function getResource(url, iter) {
+  if (iter <= 0) return Promise.reject('Failed fetch');
+  
   const pr = fetch(url);
 
   let resultTmp; // undefined
@@ -39,8 +41,7 @@ async function getResource(url, iter) {
     console.warn(`Error parse response: ${e}. Trying ${iter}`);
     iter--;
 
-    if (iter > 0)
-      return getResource(url, iter)
+    return getResource(url, iter)
   }
 
   return result;
@@ -53,9 +54,10 @@ getResource('https://galek.free.beeceptor.com', 5)
     console.warn("Error is present")
   })
 
+/*
 getResource('https://galek.free.beeceptor.com/error', 5)
   .then((res) => console.warn(res))
   .catch(error => {
     console.warn("Error is present")
-  })
+  })*/
 
