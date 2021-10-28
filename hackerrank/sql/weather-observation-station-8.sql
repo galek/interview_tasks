@@ -8,4 +8,4 @@ RLIKE - как регулярка
 https://oracleplsql.ru/rlike-mariadb.html
 */
 
-SELECT DISTINCT city FROM STATION WHERE city LIKE '^[aeiouAEIOU].*[aeiouAEIOU]$'
+SELECT DISTINCT city FROM STATION WHERE city RLIKE '^[aeiouAEIOU].*[aeiouAEIOU]$'
