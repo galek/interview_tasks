@@ -12,30 +12,26 @@
 void ResPrintf(const std::vector<int>& _v);
 
 
-void puz(std::vector<int> _v)
+void puz(std::vector<int>&_v) 
 {
-
 	for (size_t i = 0; i < _v.size(); i++) // don't forget about this!
 		for (size_t i = 1; i < _v.size(); i++)
 		{
-			if (_v[i] < _v[i - 1])
-			{
+			if (_v[i] < _v[i - 1]) {
 				std::swap(_v[i], _v[i - 1]); // псевдокод, меняет местами 
 			}
 		}
 
-	//ResPrintf(_v);
+	ResPrintf(_v);
 }
 
-void ResPrintf(const std::vector<int>& _v)
-{
-	for (auto c : _v)
-	{
-		std::cout << c << "\n";
+void ResPrintf(const std::vector<int>& _v) {
+	for (const auto &c : _v) {
+		std::cout << c << ",";
 	}
 }
 
-void main()
+int main()
 {
 	std::vector<int> a{ 3,2,1 };
 	puz(a);
@@ -47,4 +43,5 @@ void main()
 	//ResPrintf(a);
 
 	//system("pause");
+	return 0;
 }
